@@ -4,58 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-Dario Thoelen</title>
-    <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="bestanden/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <ul class="navbar">
-        <li><a href="index.html">Start</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="ervaring.html">Ervaring</a></li>
-        <li><a href="hobby.html">Hobby's / Interesses</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
 
-    <div class="header">
-        <h1>Portfolio - Dario thoelen</h1>
-        <img src="img/almas-salakhov-PSjJ6KXEW5c-unsplash.jpg" alt="Foto van oranje achtergrond voor de header">
+            <a class="navbar-brand" href="index.html">Dario Thoelen</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Start</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ervaring.html">Ervaring</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobby.html">Hobby's / Interesses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="hero py-5">
+        <div class="container-fluid">
+            <div class="row m-3 align-items-center">
+                <div class="col-md-7">
+                    <h1>Hallo, ik ben Dario Thoelen.</h1>
+                    <h2>Student Programmeren aan Thomas More</h2>
+                    <p>
+                        Ik heb een sterke interesse in technologie,
+                        softwareontwikkeling, webdesign en gaming.
+                        Op deze website ontdek je meer over mijn
+                        vaardigheden, projecten en werkervaring.
+                    </p>
+                    <a class="btn btn-primary p-2" href="contact.html" role="button">Neem contact op!</a>
+                </div>
+
+                <div class="col-md-5 d-none d-md-inline">
+                    <img src="img/IMG_4804-removebg-preview.png"
+                         alt="Foto van Dario Thoelen"
+                         class="img-fluid rounded">
+                </div>
+
+            </div>
+        </div>
     </div>
-    <div id="container">
+
+
+    <div class="container mt-5">
+        <div class="row my-5">
+            <div class="col-4">
+                <div class="card text-center" style="width: auto;">
+                    <a href="cv.html"><img src="img/markus-winkler-7iSEHWsxPLw-unsplash.jpg" class="card-img-top" alt="Foto van een laptop met ernaast papieren"></a>
+                    <div class="card-body">
+                        <p class="card-text">CV</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center" style="width: auto;">
+                    <a href="cv.html"><img src="img/joshua-aragon-BMnhuwFYr7w-unsplash.jpg" class="card-img-top" alt="Foto van een laptop met erachter een scherm met code op"></a>
+                    <div class="card-body">
+                        <p class="card-text">Ervaring</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center" style="width: auto;">
+                    <a href="cv.html"><img src="img/javier-martinez-hUD0PUczwJQ-unsplash.jpg" class="card-img-top" alt="Foto van een gaming controller"></a>
+                    <div class="card-body">
+                        <p class="card-text">Hobby's</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <h2>Wie ben ik?</h2>
-        <div class="wiebenik">
-            <div class="tekst">
+        <div class="wiebenik row my-3">
+            <div class="col-12 col-sm-7 ">
                 <p>Hallo, ik ben Dario en ik studeer Programmeren aan Thomas More. Ik heb een sterke interesse in technologie,
                    softwareontwikkeling, webdesign en gaming. Op deze website ontdek je meer over mijn vaardigheden, projecten en werkervaring.
-                   Op de pagina <a href="#">Hobby's en interesses</a> vertel ik meer over wat mij motiveert en wat ik graag doe in mijn vrije tijd. Op de pagina
-                   <a href="$">Ervaring</a> vind je een overzicht van mijn eerdere werkervaring en de kennis die ik daar heb opgedaan.
+                   Op de pagina <a href="hobby.html">Hobby's en interesses</a> vertel ik meer over wat mij motiveert en wat ik graag doe in mijn vrije tijd. Op de pagina
+                   <a href="ervaring.html">Ervaring</a> vind je een overzicht van mijn eerdere werkervaring en de kennis die ik daar heb opgedaan.
                 </p>
                 <p>
                     Mijn sterke punten zijn probleemoplossend denken,
                     nauwkeurig werken en informatie duidelijk documenteren. Ik werk graag gestructureerd en vind het belangrijk om afspraken na te komen.
-                    Een werkpunt van mij is om vaker zelf gesprekken te starten en mijn communicatieve vaardigheden verder te ontwikkelen.
                 </p>
             </div>
-            <div class="foto">
+            <div class="col-5 d-none d-sm-inline">
                 <img src="img/mezelf.jpeg" alt="Foto van Dario Thoelen">
             </div>
         </div>
+
+
+        
         <div class="footer">
             <hr>
-            <p class="footernaam">Dario Thoelen</p>
-            <p>Student Programmeren aan Thomas More </p>
-            <ul>
-                <li><a href="index.html">Start</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="ervaring.html">Ervaring</a></li>
-                <li><a href="hobby.html">Hobby's / Interesses</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <p>E-mail: r0929445@student.thomasmore.be</p>
+            <div class="row">
+                <div class="col-6 col-md-4 ">
+                    <p class="footernaam">Dario Thoelen</p>
+                    <p>Student Programmeren aan Thomas More </p>
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <p class="footernaam">Navigatie</p>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="ervaring.html">Ervaring</a></li>
+                        <li><a href="hobby.html">Hobby's / Interesses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <p class="footernaam">Social media</p>
+                    <p>E-mail: r0929445@student.thomasmore.be</p>
+                </div>
+            </div>
+            
             <hr>
-            <p class="footercopyright">&copy; Dario Thoelen - Portfolio</p>
+            <p class="footercopyright text-center">&copy; Dario Thoelen - Portfolio</p>
+            
+            
+            
+            
         </div>
     </div>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
 </html>
