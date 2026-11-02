@@ -4,25 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-Ervaring-Dario Thoelen</title>
-    <link rel="stylesheet" href="css/ervaring.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="bestanden/favicon.ico">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/ervaring.css">
 </head>
 <body>
-    <ul class="navbar">
-        <li><a href="index.html">Start</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="ervaring.html">Ervaring</a></li>
-        <li><a href="hobby.html">Hobby's / Interesses</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div id="container">
+     <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Dario Thoelen</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Start</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ervaring.html">Ervaring</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobby.html">Hobby's / Interesses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
         
         <h1>Ervaring - Dario Thoelen</h1>
         <div class="ervaring">
             <img src="img/paul-steuber-rs11hu-bkTc-unsplash_50.jpg" alt="Foto van nikefabriek.">
             <div class="ervaring-tekst">
-                <h2>01 - Nike</h2>
+                <h2 class="py-3">01 - Nike</h2>
                 <h3>Orderpicker</h3>
                     <p>
                         Tussen 2021 en 2024 werkte ik regelmatig als jobstudent bij Nike tijdens de weekendnachtshifts. Mijn belangrijkste taak was orderpicking.
@@ -39,7 +75,7 @@
         <div class="ervaring">
             <img src="img/pexels-introspectivedsgn-9456720_50.jpg" alt="Foto van hogedruk reiniger.">
             <div class="ervaring-tekst">
-                <h2>02 - Gom</h2>
+                <h2 class="py-3">02 - Gom</h2>
                 <h3>industrieel reiniger</h3>
                 
                     <p>
@@ -60,7 +96,7 @@
         <div class="ervaring">
             <img src="img/pexels-keeganjchecks-36423815_1_27.jpg" alt="Foto van flesjes bier die op de band staan.">
             <div class="ervaring-tekst">
-                <h2>03 - AbInbev</h2>
+                <h2 class="py-3">03 - AbInbev</h2>
                 <h3>Machine Operator</h3>
                 <p>
                     Ik werkte gedurende één maand als interim machine operator bij AB InBev, een internationale bierbrouwerij met bekende merken zoals Jupiler en
@@ -86,7 +122,7 @@
         <div class="ervaring">
             <img src="img/john-cameron-QukrVl1F9Q0-unsplash_3_19.jpg" alt="Foto van heel veel batterijen op elkaar.">
             <div class="ervaring-tekst">
-                <h2>04 - Energizer</h2>
+                <h2 class="py-3">04 - Energizer</h2>
                 <h3>Machine Operator</h3>
                 <p>
                     Ik werkte gedurende drie maanden als interim machine operator bij Energizer, een fabrikant van batterijen. Ik was verantwoordelijk voor het
@@ -105,20 +141,33 @@
         </div>
 
     </div>
-    <div class="footer">
+     <div class="footer">
             <hr>
-            <p class="footernaam">Dario Thoelen</p>
-            <p>Student Programmeren aan Thomas More </p>
-            <ul>
-                <li><a href="index.html">Start</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="ervaring.html">Ervaring</a></li>
-                <li><a href="hobby.html">Hobby's / Interesses</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <p>E-mail: r0929445@student.thomasmore.be</p>
+            <div class="row">
+                <div class="col-6 col-md-4 ">
+                    <p class="footernaam">Dario Thoelen</p>
+                    <p>Student Programmeren aan Thomas More </p>
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <p class="footernaam">Navigatie</p>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="ervaring.html">Ervaring</a></li>
+                        <li><a href="hobby.html">Hobby's / Interesses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <p class="footernaam">Social media</p>
+                    <p>E-mail: r0929445@student.thomasmore.be</p>
+                </div>
+            </div>
+            
             <hr>
-            <p class="footercopyright">&copy; Dario Thoelen - Portfolio</p>
-    </div>
+            <p class="footercopyright text-center">&copy; Dario Thoelen - Portfolio</p>
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
 </html>
